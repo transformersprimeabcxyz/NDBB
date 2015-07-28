@@ -21,6 +21,7 @@ bin
 obj
 OLD
 project
+Release
 
 build.cmd
 notes.txt
