@@ -1,0 +1,11 @@
+D:\Development\CS\NDBB\NDBB\Build\NDBB.exe.config
+D:\Development\Projects\NDBB\NDBB\bin\NDBB.exe.config
+D:\Development\Projects\NDBB\NDBB\bin\NDBB.exe
+D:\Development\Projects\NDBB\NDBB\bin\NDBB.pdb
+D:\Development\Projects\NDBB\NDBB\bin\Newtonsoft.Json.dll
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.formEditNative.resources
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.formMain.resources
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.Properties.Resources.resources
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.csproj.GenerateResource.Cache
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.exe
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.pdb
