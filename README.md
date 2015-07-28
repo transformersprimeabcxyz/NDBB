@@ -1,6 +1,8 @@
 #NDBB (Native Database Browser)
 GTA V natives database browser.
 
+(Latest version)[https://github.com/ShrewdSpirit/NDBB/releases/download/1.0/NDBB-1.0.zip]
+
 #Features
 - View natives.json
 - Edit natives
