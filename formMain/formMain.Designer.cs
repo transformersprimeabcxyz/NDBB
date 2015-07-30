@@ -30,7 +30,7 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpNamespace = new System.Windows.Forms.GroupBox();
             this.namespaceListBox = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.nativesListView = new System.Windows.Forms.ListView();
@@ -65,6 +65,7 @@
             this.descriptionRTB = new System.Windows.Forms.RichTextBox();
             this.exportDialog = new System.Windows.Forms.SaveFileDialog();
             this.loadFromFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.objectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -73,7 +74,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grpNamespace.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -106,7 +107,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.groupBox1);
+            this.splitContainer2.Panel1.Controls.Add(this.grpNamespace);
             // 
             // splitContainer2.Panel2
             // 
@@ -116,16 +117,16 @@
             this.splitContainer2.SplitterDistance = 162;
             this.splitContainer2.TabIndex = 3;
             // 
-            // groupBox1
+            // grpNamespace
             // 
-            this.groupBox1.Controls.Add(this.namespaceListBox);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(162, 385);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Namespaces";
+            this.grpNamespace.Controls.Add(this.namespaceListBox);
+            this.grpNamespace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpNamespace.Location = new System.Drawing.Point(0, 0);
+            this.grpNamespace.Name = "grpNamespace";
+            this.grpNamespace.Size = new System.Drawing.Size(162, 385);
+            this.grpNamespace.TabIndex = 0;
+            this.grpNamespace.TabStop = false;
+            this.grpNamespace.Text = "Namespaces";
             // 
             // namespaceListBox
             // 
@@ -350,24 +351,26 @@
             this.listOfPedModeslToolStripMenuItem,
             this.vehicleModelsToolStripMenuItem,
             this.weaponsToolStripMenuItem,
+            this.objectsToolStripMenuItem,
             this.typesToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
+            this.toolsToolStripMenuItem.Visible = false;
             // 
             // listOfPedModeslToolStripMenuItem
             // 
             this.listOfPedModeslToolStripMenuItem.Enabled = false;
             this.listOfPedModeslToolStripMenuItem.Name = "listOfPedModeslToolStripMenuItem";
-            this.listOfPedModeslToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.listOfPedModeslToolStripMenuItem.Text = "Ped Models";
+            this.listOfPedModeslToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listOfPedModeslToolStripMenuItem.Text = "Peds";
             // 
             // vehicleModelsToolStripMenuItem
             // 
             this.vehicleModelsToolStripMenuItem.Enabled = false;
             this.vehicleModelsToolStripMenuItem.Name = "vehicleModelsToolStripMenuItem";
-            this.vehicleModelsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.vehicleModelsToolStripMenuItem.Text = "Vehicle Models";
+            this.vehicleModelsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vehicleModelsToolStripMenuItem.Text = "Vehicles";
             // 
             // weaponsToolStripMenuItem
             // 
@@ -424,6 +427,13 @@
             this.loadFromFileDialog.FileName = "natives";
             this.loadFromFileDialog.Filter = "JSON|*.json";
             // 
+            // objectsToolStripMenuItem
+            // 
+            this.objectsToolStripMenuItem.Enabled = false;
+            this.objectsToolStripMenuItem.Name = "objectsToolStripMenuItem";
+            this.objectsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.objectsToolStripMenuItem.Text = "Objects";
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,7 +454,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.grpNamespace.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -459,7 +469,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.RichTextBox descriptionRTB;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpNamespace;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -493,6 +503,7 @@
         private System.Windows.Forms.ToolStripMenuItem editSelectedNativeToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog exportDialog;
         private System.Windows.Forms.OpenFileDialog loadFromFileDialog;
+        private System.Windows.Forms.ToolStripMenuItem objectsToolStripMenuItem;
     }
 }
 

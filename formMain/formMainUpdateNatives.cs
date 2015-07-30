@@ -117,7 +117,7 @@ namespace NDBB
             function.Result = newFunction.Result;
             function.Params = newFunction.Params;
 
-            ShowNativesFor(SelectedNamespace, true);
+            ShowNativesFor(SelectedNamespaceName, true);
             RefreshNatiesListView(false);
         }
     }

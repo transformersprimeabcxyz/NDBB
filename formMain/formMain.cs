@@ -37,7 +37,7 @@ namespace NDBB
 
         private void namespaceListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String itemName = SelectedNamespace;
+            String itemName = SelectedNamespaceName;
             ShowNativesFor(itemName, true);
             RefreshNatiesListView(false);
             ShowDocs();

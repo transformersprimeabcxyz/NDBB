@@ -9,11 +9,24 @@ namespace NDBB
     public partial class formMain
     {
         // Returns the selected namespace
-        String SelectedNamespace
+        String SelectedNamespaceName
         {
             get
             {
-                return namespaceListBox.Items[namespaceListBox.SelectedIndex].ToString();
+                return namespaceListBox.Items[namespaceListBox.SelectedIndex].ToString().Split(' ')[0];
+            }
+        }
+
+        // Returns the namespace selected
+        NativeNamespace SelectedNamespace
+        {
+            get
+            {
+                String snn = SelectedNamespaceName;
+                foreach (NativeNamespace _namespace in natives)
+                    if (_namespace.Name == snn)
+                        return _namespace;
+                return null;
             }
         }
 

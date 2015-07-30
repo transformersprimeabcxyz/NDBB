@@ -9,3 +9,4 @@ D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.Properties.Resources.resource
 D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.csproj.GenerateResource.Cache
 D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.exe
 D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.pdb
+D:\Development\Projects\NDBB\NDBB\obj\Release\NDBB.csprojResolveAssemblyReference.cache

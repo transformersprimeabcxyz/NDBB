@@ -10,19 +10,25 @@ namespace NDBB
 {
     public partial class formMain
     {
-        // list of natives
+        // List of natives
         private List<NativeNamespace> natives;
 
         bool nativesHasChanged = false;
 
-        // loads natives from native manager
+        // Loads natives from native manager
         void LoadNatives(String path)
         {
             natives = NativeManager.LoadFromFile(path);
+            if (natives == null) return;
 
             ClearAll();
+            int numnatives = 0;
             foreach (NativeNamespace _namespace in natives)
-                namespaceListBox.Items.Add(_namespace.Name);
+            {
+                namespaceListBox.Items.Add(_namespace.Name + " (" + _namespace.Functions.Count.ToString() + ")");
+                numnatives += (int)_namespace.Functions.Count;
+            }
+            grpNamespace.Text = "Namespaces (" + numnatives.ToString() + ")";
         }
 
         // Show natives for specified namespace
@@ -98,7 +104,7 @@ namespace NDBB
 
             if (filter.Length == 0)
             {
-                ShowNativesFor(SelectedNamespace, true);
+                ShowNativesFor(SelectedNamespaceName, true);
                 RefreshNatiesListView();
                 return;
             }
@@ -106,7 +112,7 @@ namespace NDBB
             List<NativeFunction> found = null;
             NativeNamespace ns = null;
 
-            String sn = SelectedNamespace;
+            String sn = SelectedNamespaceName;
             foreach (NativeNamespace n in natives)
                 if (sn == n.Name)
                 {
