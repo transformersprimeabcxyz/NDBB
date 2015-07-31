@@ -58,6 +58,7 @@
             this.listOfPedModeslToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vehicleModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weaponsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.objectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.typesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +66,6 @@
             this.descriptionRTB = new System.Windows.Forms.RichTextBox();
             this.exportDialog = new System.Windows.Forms.SaveFileDialog();
             this.loadFromFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.objectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -178,12 +178,11 @@
             // colName
             // 
             this.colName.Text = "Name";
-            this.colName.Width = 320;
+            this.colName.Width = 340;
             // 
             // colResult
             // 
             this.colResult.Text = "Result";
-            this.colResult.Width = 80;
             // 
             // groupBox2
             // 
@@ -362,28 +361,35 @@
             // 
             this.listOfPedModeslToolStripMenuItem.Enabled = false;
             this.listOfPedModeslToolStripMenuItem.Name = "listOfPedModeslToolStripMenuItem";
-            this.listOfPedModeslToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listOfPedModeslToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.listOfPedModeslToolStripMenuItem.Text = "Peds";
             // 
             // vehicleModelsToolStripMenuItem
             // 
             this.vehicleModelsToolStripMenuItem.Enabled = false;
             this.vehicleModelsToolStripMenuItem.Name = "vehicleModelsToolStripMenuItem";
-            this.vehicleModelsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vehicleModelsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.vehicleModelsToolStripMenuItem.Text = "Vehicles";
             // 
             // weaponsToolStripMenuItem
             // 
             this.weaponsToolStripMenuItem.Enabled = false;
             this.weaponsToolStripMenuItem.Name = "weaponsToolStripMenuItem";
-            this.weaponsToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.weaponsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.weaponsToolStripMenuItem.Text = "Weapons";
+            // 
+            // objectsToolStripMenuItem
+            // 
+            this.objectsToolStripMenuItem.Enabled = false;
+            this.objectsToolStripMenuItem.Name = "objectsToolStripMenuItem";
+            this.objectsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.objectsToolStripMenuItem.Text = "Objects";
             // 
             // typesToolStripMenuItem
             // 
             this.typesToolStripMenuItem.Enabled = false;
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.typesToolStripMenuItem.Text = "Types";
             // 
             // helpToolStripMenuItem
@@ -426,13 +432,6 @@
             this.loadFromFileDialog.DefaultExt = "json";
             this.loadFromFileDialog.FileName = "natives";
             this.loadFromFileDialog.Filter = "JSON|*.json";
-            // 
-            // objectsToolStripMenuItem
-            // 
-            this.objectsToolStripMenuItem.Enabled = false;
-            this.objectsToolStripMenuItem.Name = "objectsToolStripMenuItem";
-            this.objectsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.objectsToolStripMenuItem.Text = "Objects";
             // 
             // formMain
             // 

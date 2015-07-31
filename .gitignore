@@ -17,8 +17,6 @@ $RECYCLE.BIN/
 *.sln
 MakeFile
 
-bin
-obj
 OLD
 project
 Release
